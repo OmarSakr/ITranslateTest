@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".mainActivity.view.MainActivity">
+    <!--relativeToolbar-->
+    <RelativeLayout
+        android:id="@+id/relativeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/drawble_app_color_with_light_shadow">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:text="@string/voiceRecorder"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeToolbar">
+        <!--relativeRecord-->
+        <RelativeLayout
+            android:id="@+id/relativeRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/ivMic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/recorder" />
+
+            <TextView
+                android:id="@+id/buttonShowRecords"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ivMic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/drawable_white_app_color_stroke_5_round"
+                android:gravity="center"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/showRecords"
+                android:textColor="@color/appColor"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
